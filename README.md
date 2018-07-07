@@ -15,7 +15,7 @@
 ## Setup
 
 ```sh
-  git clone https://github.com/rakannimer/nodejs-express-typescript-jwt-api
+  git clone git@bitbucket.org:cabbis/cabbis-services.git
   cd nodejs-express-typescript-jwt-api && rm -r .git/
   yarn # or npm i
 ```
