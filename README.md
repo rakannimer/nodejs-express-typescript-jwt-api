@@ -1,5 +1,17 @@
 # Typescript NodeJS Express Server
 
+- [Typescript NodeJS Express Server](#typescript-nodejs-express-server)
+  - [Setup](#setup)
+  - [Development](#development)
+  - [Testing](#testing)
+  - [Adding a route](#adding-a-route)
+  - [Building for production](#building-for-production)
+  - [Running on production](#running-on-production)
+  - [Compilation](#compilation)
+    - [Development environment](#development-environment)
+    - [Prod environment](#prod-environment)
+    - [Test environment](#test-environment)
+
 ## Setup
 
 ```sh
