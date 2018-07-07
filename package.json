@@ -5,6 +5,7 @@
   "module": "dist/index.m.js",
   "types": "dist/index.d.ts",
   "scripts": {
+    "precommit": "lint-staged",
     "dev": "concurrently \"tsc --watch\" \"nodemon build/index.js\"",
     "build": "rm -rf ./dist/ && rollup -c",
     "test:watch": "jest --watch",
@@ -13,6 +14,20 @@
     "create:route": "plop route",
     "create:route:public": "plop route public",
     "create:route:protected": "plop route protected"
+  },
+  "lint-staged": {
+    "*.{js,json,ts}": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.{ts,js}": [
+      "yarn test:ci"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "repository": {
     "type": "git",
@@ -27,7 +42,9 @@
     "@types/lodash": "^4.14.110",
     "axiosist": "^0.1.1",
     "concurrently": "^3.6.0",
+    "husky": "^1.0.0-rc.12",
     "jest": "^23.3.0",
+    "lint-staged": "^7.2.0",
     "nodemon": "^1.17.5",
     "parcel-bundler": "^1.8.1",
     "plop": "^2.0.0",
