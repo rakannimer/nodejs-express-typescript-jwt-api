@@ -1,0 +1,48 @@
+{
+  "name": "nodejs-express-typescript-jwt-api",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "module": "dist/index.m.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "concurrently \"tsc --watch\" \"nodemon build/index.js\"",
+    "build": "rm -rf ./dist/ && rollup -c",
+    "test:watch": "jest --watch",
+    "test:ci": "jest",
+    "start": "NODE_ENV=production node dist/index.cjs.js",
+    "create:route": "plop route",
+    "create:route:public": "plop route public",
+    "create:route:protected": "plop route protected"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/cabbis/cabbis-services"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/body-parser": "^1.17.0",
+    "@types/cors": "^2.8.4",
+    "@types/express": "^4.16.0",
+    "@types/jest": "^22.2.3",
+    "@types/jsonwebtoken": "^7.2.8",
+    "@types/lodash": "^4.14.110",
+    "axiosist": "^0.1.1",
+    "concurrently": "^3.6.0",
+    "jest": "^23.3.0",
+    "nodemon": "^1.17.5",
+    "parcel-bundler": "^1.8.1",
+    "plop": "^2.0.0",
+    "prettier": "^1.13.7",
+    "rollup": "^0.59.2",
+    "rollup-plugin-typescript2": "^0.14.0",
+    "ts-jest": "^23.0.0",
+    "typescript": "^2.9.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.3.0",
+    "lodash": "^4.17.10"
+  }
+}
