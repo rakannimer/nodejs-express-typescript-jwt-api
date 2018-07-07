@@ -16,9 +16,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://bitbucket.org/cabbis/cabbis-services"
+    "url": "https://github.com/rakannimer/nodejs-express-typescript-jwt-api"
   },
-  "license": "MIT",
   "devDependencies": {
     "@types/body-parser": "^1.17.0",
     "@types/cors": "^2.8.4",
