@@ -36,7 +36,7 @@ server.get(authRoutePath, authHandleRequest);
 //  </ServerRoutes>
 // </GENERATED_CODE_DO_NOT_EDIT>
 
-// If this module is run from the command line, e,g. node index.js
+// If this module is run from the command line, e.g. node index.js
 if (require.main === module) {
   server.listen(process.env.PORT || 3000);
 }

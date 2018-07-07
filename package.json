@@ -19,14 +19,11 @@
     "*.{js,json,ts}": [
       "prettier --write",
       "git add"
-    ],
-    "*.{ts,js}": [
-      "yarn test:ci"
     ]
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged && yarn test:ci"
     }
   },
   "repository": {
