@@ -14,11 +14,7 @@
 
 ## Setup
 
-```sh
-  git clone git@bitbucket.org:cabbis/cabbis-services.git
-  cd nodejs-express-typescript-jwt-api && rm -r .git/
-  yarn # or npm i
-```
+Clone repo and run `yarn`
 
 👍 Good to go.
 
